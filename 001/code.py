@@ -1,9 +1,9 @@
 
-def sum_of_first_n_numbers(n):
-    if n <= 1:
-        return n
+def check_for_symmetry(input_string):
+    if input_string == (input_string [::-1]):
+        return True
     else:
-        return n + sum_of_first_n_numbers(n-1)
+        return False
 
-
-print("The sum of the first n numbers is", sum_of_first_n_numbers(n))
+print(check_for_symmetry('tacocat'))
+print(check_for_symmetry('leaf'))
