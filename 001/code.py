@@ -7,4 +7,4 @@ def check_for_symmetry(input_string):
         return "Word is not symmetrical."
 
 
-check_for_symmetry(txt)
+print(check_for_symmetry(txt))
