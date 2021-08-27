@@ -11,10 +11,11 @@ print(check_for_symmetry('leaf'))
 
 # Wednesday, Thursday, and Friday tests (8/25-8/27)
 
-list1 = [15, 2, 3, 4, 80, 69, 100, 20, 40]
-list2 = [30, 50, 60, 70, 100]
+list1 = [15, 20, 30, 45, 60, 70]
+list2 = [10, 15, 30, 60, 65, 80]
 list3 = []
 
+# get_symmetry test code
 for i in list1:
     for y in list2:
         if y == i:
@@ -22,11 +23,37 @@ for i in list1:
 
 print(list3)
 
+##################
 
-########
-#def get_intersection(list1, list2):
-#get_union
+# get_union test code
+for i in list1:
+    for y in list2:
+        if y == i:
+            list1.remove(i)
+
+print(list1, list2)
+
+
+for i in list1:
+    for y in list2:
+        if y == i:
+            list2.remove(y)
+
+print(list1, list2)
+
+# both code above works without printing any repeats
+
+
+#now i need to make it into a function that prints out only 1 list
+
+for i in list1:
+    for y in list2:
+        if y == i:
+            list3.append(i)
+            list3.append(y)
+
+print(list3)
+
+#################
+
 #count_characters(input_string)
-
-#Notes from Justin: don't use any built in libraries, just do it from scratch. Also, don't use python sets.
-#
