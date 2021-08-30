@@ -1,2 +1,2 @@
 language = "bash"
-run = "python testing/base2.py"
+run = ""
