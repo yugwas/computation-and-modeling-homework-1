@@ -60,3 +60,26 @@ print (getunion)
 #######################################################
 
 # count_characters(input_string)
+
+input_string = "hello"
+character_count = {}
+  
+for i in input_string:
+    if i in character_count:
+        character_count[i] += 1
+    else:
+        character_count[i] = 1
+  
+print (str(character_count))
+
+#######################################################
+
+# get_first_n_terms_nonrecursive(n) test code
+
+# getfirstntermsnonrecursive(n): Returns the firstnterms of the sequencean= 3an−1−4, a1= 5,using aforloop.
+
+
+
+x = 10
+for x in input:
+  input = 3(n-1)-4

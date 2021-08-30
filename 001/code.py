@@ -34,3 +34,16 @@ print (get_union)
 # get_union code gets the union of the lists from the get_intersection code
 
 # count_characters(inputstring) code
+
+input_string = input("type here to see the character count of a word: ")
+character_count = {}
+  
+for i in input_string:
+    if i in character_count:
+        character_count[i] += 1
+    else:
+        character_count[i] = 1
+  
+print (str(character_count))
+
+# get_first_n_termsnonrecursive(n) code
