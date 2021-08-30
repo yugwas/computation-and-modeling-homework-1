@@ -9,6 +9,8 @@ def check_for_symmetry(input_string):
 print(check_for_symmetry('tacocat'))
 print(check_for_symmetry('leaf'))
 
+#######################################################
+
 # Wednesday, Thursday, and Friday tests (8/25-8/27)
 
 list1 = [15, 20, 30, 45, 60, 70]
@@ -23,7 +25,7 @@ for i in list1:
 
 print(list3)
 
-##################
+#######################################################
 
 # get_union test code
 for i in list1:
@@ -44,16 +46,17 @@ print(list1, list2)
 # both code above works without printing any repeats
 
 
-#now i need to make it into a function that prints out only 1 list
+# now i need to make it into a function that prints out only 1 list
 
-for i in list1:
-    for y in list2:
-        if y == i:
-            list3.append(i)
-            list3.append(y)
+list1 = [15, 20, 30, 45, 60, 70]
+list2 = [10, 15, 30, 60, 65, 80]
+list3 = []
 
-print(list3)
+getunion = list({i: i for i in list1 + list2}.values())
 
-#################
+print (getunion)
+# i rewrote the whole thing because I couldn't figure out how to combine the lists
 
-#count_characters(input_string)
+#######################################################
+
+# count_characters(input_string)

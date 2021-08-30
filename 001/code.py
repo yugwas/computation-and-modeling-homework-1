@@ -13,7 +13,7 @@ print(check_for_symmetry(txt))
 
 # Wednesday, Thursday, and Friday code (8/25-8/27)
 
-#get_intersection code
+# get_intersection code
 list1 = [100, 200, 500, 600, 900]
 list2 = [200, 400, 500, 800, 900]
 list3 = []
@@ -27,3 +27,10 @@ for i in list1:
 print(list3)
 
 # get_union code
+
+get_union = list({i: i for i in list1 + list2}.values())
+
+print (get_union)
+# get_union code gets the union of the lists from the get_intersection code
+
+# count_characters(inputstring) code
