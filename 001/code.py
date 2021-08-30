@@ -47,3 +47,71 @@ for i in input_string:
 print (str(character_count))
 
 # get_first_n_termsnonrecursive(n) code
+
+def recursive_function(last_term):
+    return 3*last_term - 4
+
+
+def get_first_n_terms_nonrecursive(num_terms):
+    terms = []
+    for i in range(num_terms):
+        if i != 0:
+            terms.append(recursive_function(terms[i-1]))
+        else:
+            terms.append(5)
+    return terms
+
+print(get_first_n_terms_nonrecursive(4))
+
+#######################################################
+
+# recursive code
+
+
+def get_nth_term_recursive(n):
+    if n == 1:
+        return 5
+    else:
+        return 3* get_nth_term_recursive(n-1) - 4
+
+print(get_nth_term_recursive(4))
+
+#######################################################
+
+#convert to base 10 code
+
+binary_num = "10011"
+
+def convert_to_decimal(binary_num):
+    decimal_num = 0
+    length_of_num = len(binary_num) - 1
+    for i in range(len(binary_num)):
+        decimal_num += int(binary_num[i]) * 2**(length_of_num -i)
+    return decimal_num
+
+print(convert_to_decimal(binary_num))
+
+#######################################################
+
+# convert to base 2 code
+
+decimal_num = 19
+
+def convert_to_binary(decimal_num):
+    if decimal_num == 1:
+        return 1
+    binary_num = ""
+    divided_num = decimal_num//2
+    remainder = divided_num % 2;
+    binary_num += str(remainder)
+    while(divided_num != 0):
+        if (divided_num == 1):
+            binary_num+="1"
+            break;
+        divided_num = divided_num//2
+        remainder = divided_num % 2 
+        binary_num += str(remainder)
+    return binary_num
+
+print(convert_to_binary(2))
+        
