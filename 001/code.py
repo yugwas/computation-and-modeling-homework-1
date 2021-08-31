@@ -1,15 +1,10 @@
 # Monday and Tuesday code (8/23-8/24)
 
-txt = input("type here to see if your word is symmetrical: ")
-
 def check_for_symmetry(input_string):
     if input_string == (input_string [::-1]):
        return True
     else:
         return False
-
-
-print(check_for_symmetry(txt))
 
 # Wednesday, Thursday, and Friday code (8/25-8/27)
 
@@ -24,14 +19,9 @@ for i in list1:
         if y == i:
             list3.append(i)
 
-print(list3)
-
 # get_union code
 
 get_union = list({i: i for i in list1 + list2}.values())
-
-print (get_union)
-# get_union code gets the union of the lists from the get_intersection code
 
 # count_characters(inputstring) code
 
@@ -61,20 +51,15 @@ def get_first_n_terms_nonrecursive(num_terms):
             terms.append(5)
     return terms
 
-print(get_first_n_terms_nonrecursive(4))
-
 #######################################################
 
 # recursive code
-
 
 def get_nth_term_recursive(n):
     if n == 1:
         return 5
     else:
         return 3* get_nth_term_recursive(n-1) - 4
-
-print(get_nth_term_recursive(4))
 
 #######################################################
 
@@ -89,7 +74,6 @@ def convert_to_decimal(binary_num):
         decimal_num += int(binary_num[i]) * 2**(length_of_num -i)
     return decimal_num
 
-print(convert_to_decimal(binary_num))
 
 #######################################################
 
@@ -112,6 +96,3 @@ def convert_to_binary(decimal_num):
         remainder = divided_num % 2 
         binary_num += str(remainder)
     return binary_num
-
-print(convert_to_binary(2))
-        
