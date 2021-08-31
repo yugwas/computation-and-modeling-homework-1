@@ -6,8 +6,9 @@ def check_for_symmetry(input_string):
     else:
         return False
 
-print(check_for_symmetry('tacocat'))
-print(check_for_symmetry('leaf'))
+
+if (check_for_symmetry('tacocat')) == False:
+    print ("Input is not symmetrical.")
 
 #######################################################
 
@@ -17,13 +18,14 @@ list1 = [15, 20, 30, 45, 60, 70]
 list2 = [10, 15, 30, 60, 65, 80]
 list3 = []
 
-# get_symmetry test code
+# get_intersection
 for i in list1:
     for y in list2:
         if y == i:
             list3.append(i)
 
-print(list3)
+if list3 == []:
+    print ("Lists do not share an intersection.")
 
 #######################################################
 
@@ -31,11 +33,11 @@ print(list3)
 
 list1 = [15, 20, 30, 45, 60, 70]
 list2 = [10, 15, 30, 60, 65, 80]
-list3 = []
 
 getunion = list({i: i for i in list1 + list2}.values())
 
-print (getunion)
+if list == []:
+    print ("Please try again. Failed to get union of lists.")
 
 #######################################################
 
@@ -50,6 +52,8 @@ for i in input_string:
     else:
         character_count[i] = 1
   
+
+
 print (str(character_count))
 
 #######################################################
