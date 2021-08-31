@@ -1,18 +1,19 @@
-# Monday and Tuesday tests (8/23-8/24)
+from code import check_for_symmetry
+from code import get_union
+from code import get_first_n_terms_nonrecursive
+from code import get_nth_term_recursive
+from code import convert_to_decimal
+from code import convert_to_binary
 
-def check_for_symmetry(input_string):
-    if input_string == (input_string [::-1]):
-       return True
-    else:
-        return False
 
+# check_for_symmetry tests (8/23-8/24)
 
 if (check_for_symmetry('tacocat')) == False:
     print ("Input is not symmetrical.")
 
 #######################################################
 
-# Wednesday, Thursday, and Friday tests (8/25-8/27)
+# get_intersection
 
 list1 = [15, 20, 30, 45, 60, 70]
 list2 = [10, 15, 30, 60, 65, 80]
@@ -29,12 +30,7 @@ if list3 == []:
 
 #######################################################
 
-# get_union test code
-
-list1 = [15, 20, 30, 45, 60, 70]
-list2 = [10, 15, 30, 60, 65, 80]
-
-getunion = list({i: i for i in list1 + list2}.values())
+# get_union tests
 
 if list == []:
     print ("Please try again. Failed to get union of lists.")
@@ -45,7 +41,7 @@ if list == []:
 
 input_string = "hello"
 character_count = {}
-  
+
 for i in input_string:
     if i in character_count:
         character_count[i] += 1
@@ -59,20 +55,6 @@ if input_string == 0:
 
 # get_first_n_terms_nonrecursive(n) test code
 
-def recursive_function(last_term):
-    return 3*last_term - 4
-
-
-def get_first_n_terms_nonrecursive(num_terms):
-    terms = []
-    for i in range(num_terms):
-        if i != 0:
-            terms.append(recursive_function(terms[i-1]))
-        else:
-            terms.append(5)
-    return terms
-
-
 if get_first_n_terms_nonrecursive == 0:
     print ("Failed to get terms of nonrecursive function. Please try again.")
 
@@ -80,15 +62,6 @@ if get_first_n_terms_nonrecursive == 0:
 #######################################################
 
 # recursive test code
-
-
-def get_nth_term_recursive(n):
-    if n == 1:
-        return 5
-    else:
-        return 3* get_nth_term_recursive(n-1) - 4
-
-#[5, 11, 29, 83]
 
 if get_nth_term_recursive == 0:
     print ("Failed to get term of recursive function. Please try again.")
@@ -98,13 +71,6 @@ if get_nth_term_recursive == 0:
 #convert to base 10 test code
 
 binary_num = "10011"
-
-def convert_to_decimal(binary_num):
-    decimal_num = 0
-    length_of_num = len(binary_num) - 1
-    for i in range(len(binary_num)):
-        decimal_num += int(binary_num[i]) * 2**(length_of_num -i)
-    return decimal_num
 
 if (convert_to_decimal(binary_num)) != 19:
     print ("Failed to convert to decimal. Please try again.")
