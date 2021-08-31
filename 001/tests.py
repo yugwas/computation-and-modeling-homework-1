@@ -52,9 +52,8 @@ for i in input_string:
     else:
         character_count[i] = 1
   
-
-
-print (str(character_count))
+if input_string == 0:
+    print ("Please try again.")
 
 #######################################################
 
@@ -73,7 +72,10 @@ def get_first_n_terms_nonrecursive(num_terms):
             terms.append(5)
     return terms
 
-print(get_first_n_terms_nonrecursive(4))
+
+if get_first_n_terms_nonrecursive == 0:
+    print ("Failed to get terms of nonrecursive function. Please try again.")
+
 
 #######################################################
 
@@ -86,9 +88,10 @@ def get_nth_term_recursive(n):
     else:
         return 3* get_nth_term_recursive(n-1) - 4
 
-print(get_nth_term_recursive(4))
-
 #[5, 11, 29, 83]
+
+if get_nth_term_recursive == 0:
+    print ("Failed to get term of recursive function. Please try again.")
 
 #######################################################
 
@@ -103,7 +106,8 @@ def convert_to_decimal(binary_num):
         decimal_num += int(binary_num[i]) * 2**(length_of_num -i)
     return decimal_num
 
-print(convert_to_decimal(binary_num))
+if (convert_to_decimal(binary_num)) != 19:
+    print ("Failed to convert to decimal. Please try again.")
 
 #######################################################
 
@@ -127,4 +131,5 @@ def convert_to_binary(decimal_num):
         binary_num += str(remainder)
     return binary_num
 
-print(convert_to_binary(2))
+if (convert_to_binary(decimal_num)) != "10011":
+    print ("Failed to convert to binary. Please try again.")
