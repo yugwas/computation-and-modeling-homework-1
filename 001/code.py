@@ -25,16 +25,17 @@ get_union = list({i: i for i in list1 + list2}.values())
 
 # count_characters(inputstring) code
 
-input_string = input("type here to see the character count of a word: ")
 character_count = {}
-  
+
+input_string = "Hello"  
+
 for i in input_string:
     if i in character_count:
         character_count[i] += 1
     else:
         character_count[i] = 1
   
-print (str(character_count))
+#print (str(character_count))
 
 # get_first_n_termsnonrecursive(n) code
 

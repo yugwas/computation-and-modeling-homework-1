@@ -11,6 +11,12 @@ from code import convert_to_binary
 if (check_for_symmetry('tacocat')) == False:
     print ("Input is not symmetrical.")
 
+if (check_for_symmetry('dammitimmad')) == False:
+    print ("Input is not symmetrical.")
+
+if (check_for_symmetry('radar')) == False:
+    print ("Input is not symmetrical.")
+
 #######################################################
 
 # get_intersection
@@ -34,6 +40,8 @@ if list3 == []:
 
 if list == []:
     print ("Please try again. Failed to get union of lists.")
+if list == 0:
+    print ("Please try again. Failed to get union of lists.")
 
 #######################################################
 
@@ -50,6 +58,8 @@ for i in input_string:
   
 if input_string == 0:
     print ("Please try again.")
+if character_count == {}:
+    print ("Please try again.")
 
 #######################################################
 
@@ -57,7 +67,6 @@ if input_string == 0:
 
 if get_first_n_terms_nonrecursive == 0:
     print ("Failed to get terms of nonrecursive function. Please try again.")
-
 
 #######################################################
 
