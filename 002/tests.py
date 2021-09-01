@@ -1,11 +1,7 @@
 
 message = ("This is my message!")
 
-def encoding_function(input):
-    input = []
-    if i != 0:
-        input.append(encoding_function(input))
-    return 3*input - 4
-
-print (encoding_function(message))
+def encoding_function(message):
+    if message != 0:
+        return 3*message - 4
 
